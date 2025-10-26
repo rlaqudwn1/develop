@@ -1,0 +1,30 @@
+# upstage312_gpu_setup.yml
+# Python 3.12 기반, GPU 3070 최적화 Conda 환경
+# 데이터 분석, ML/AI, wandb 포함
+
+name: upstage312_gpu
+channels:
+  - defaults
+  - conda-forge
+  - nvidia
+  - pytorch
+dependencies:
+  - python=3.12
+  - pip
+  - numpy
+  - pandas
+  - matplotlib
+  - seaborn
+  - plotly
+  - scikit-learn
+  - jupyterlab
+  - notebook
+  - ipykernel
+  - pip:
+      - torch==2.3.0+cu121 # CUDA 12.1 호환
+      - torchvision==0.18.0+cu121
+      - torchaudio==2.3.0+cu121
+      - transformers
+      - datasets
+      - tqdm
+      - wandb
