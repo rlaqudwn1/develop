@@ -15,7 +15,7 @@ movie_reviews_raw.csv
 data/
 dataset/
 datasets/
-
+environment/
 # === Python ===
 # 가상 환경
 venv/
