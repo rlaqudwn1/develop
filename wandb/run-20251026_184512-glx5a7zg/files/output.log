@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "C:\Users\rlaqu\AppData\Local\Temp\ipykernel_29672\1355680596.py", line 18, in <module>
+    acc = 0.8 *ebpoch + random.urandom() * 0.2  # 임의의 정확도 계산
+                        ^^^^^^^^^^^^^^
+AttributeError: module 'random' has no attribute 'urandom'. Did you mean: '_random'?
+[34m[1mwandb[0m: [32m[41mERROR[0m The nbformat package was not found. It is required to save notebook history.

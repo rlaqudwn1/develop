@@ -1,0 +1,93 @@
+{
+    // ===================================================================
+    // 1. [유지] Python / Jupyter 핵심 환경 설정
+    // ===================================================================
+    "python.defaultInterpreterPath": "C:\\Users\\rlaqu\\miniconda3\\envs\\upstage312_gpu\\python.exe",
+    "jupyter.notebookFileRoot": "${workspaceFolder}",
+    "jupyter.askForKernelRestart": false,
+    "python.languageServer": "Pylance",
+    "jupyter.interactiveWindow.creationMode": "perFile",
+    // ===================================================================
+    // 2. [추가] 가독성 & UI 설정
+    // ===================================================================
+    // (추가) 코딩 폰트 및 리거처 설정 (Fira Code, JetBrains Mono 등 폰트 설치 필요)
+    "editor.fontFamily": "Fira Code, JetBrains Mono, D2Coding, Consolas, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    // (추가) 괄호 짝 색상 활성화 (내장 기능)
+    "editor.bracketPairColorization.enabled": true,
+    // (추가) 'indent-rainbow' 확장용 설정
+    "editor.renderWhitespace": "boundary",
+    "indentRainbow.indicatorStyle": "light",
+    // (추가) Material Icon Theme 사용
+    "workbench.iconTheme": "material-icon-theme",
+    // ===================================================================
+    // 3. [대체] 코드 포매팅 (Ruff로 통합)
+    // ===================================================================
+    // (유지) 저장 시 자동 포맷
+    "editor.formatOnSave": true,
+    // (유지) 코드 입력 중 자동 포맷 (선택 사항)
+    "editor.formatOnType": true,
+    // (유지) 탭/스페이스 설정
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    // (대체) 파이썬 기본 포맷터를 'Black'에서 'Ruff'로 변경
+    "[python]": {
+        "editor.defaultFormatter": "charliermarsh.ruff"
+    },
+    // (추가) 저장 시 Ruff가 '오류 수정'과 'import 정렬'을 모두 실행
+    // (이 설정이 isort를 대체합니다)
+    "editor.codeActionsOnSave": {
+        "source.fixAll": "explicit",
+        "source.organizeImports": "explicit"
+    },
+    // (제거됨) 아래 설정들은 Ruff가 대체하므로 삭제합니다.
+    // "python.formatting.provider": "black",
+    // "python.formatting.blackArgs": ["--line-length", "88"],
+    // "isort.args": ["--profile", "black"],
+    // 참고: Ruff의 포맷터는 Black과 호환되며 기본 줄 길이가 88입니다. (별도 설정 불필요)
+    // (추가) Prettier를 비-파이썬 파일들의 기본 포맷터로 지정
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[markdown]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    // ===================================================================
+    // 4. [유지] 기타 편의 기능
+    // ===================================================================
+    // (유지) 창 포커스가 바뀔 때 자동 저장
+    "files.autoSave": "onFocusChange",
+    "window.zoomLevel": 0,
+    "editor.wordWrap": "on",
+    "editor.minimap.enabled": false,
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    "git.autofetch": true,
+    "explorer.confirmDelete": false,
+    // ===================================================================
+    // 5. [추가] 기타 확장 프로그램 설정
+    // ===================================================================
+    // (추가) Error Lens 활성화 (오류 메시지 인라인 표시)
+    "errorLens.enabled": true,
+    "errorLens.fontStyleItalic": true,
+    // (추가) 내장 파이썬 테스트 탐색기 활성화 (Test Explorer 확장들 대체)
+    "python.testing.pytestEnabled": true,
+    "python.testing.unittestEnabled": true,
+    // ===================================================================
+    // 6. [유지] 노트북(Jupyter) 관련 설정
+    // ===================================================================
+    "notebook.output.textLineLimit": 10000,
+    "notebook.cellToolbarVisibility": "hover",
+    "notebook.compactView": false
+}

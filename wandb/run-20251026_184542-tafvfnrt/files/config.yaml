@@ -1,0 +1,35 @@
+_wandb:
+    value:
+        cli_version: 0.22.2
+        e:
+            omcfxdrxqklwdnzzj57q6t2f6gq12bzm:
+                codePath: exam_wandb\wandb_init.ipynb
+                codePathLocal: exam_wandb\wandb_init.ipynb
+                email: rlaqudwn123456@gmail.com
+                executable: c:\Users\rlaqu\miniconda3\envs\upstage312_gpu\python.exe
+                host: 김병주
+                os: Windows-11-10.0.26100-SP0
+                program: c:\develop\exam_wandb\wandb_init.ipynb
+                python: CPython 3.12.12
+                root: c:\develop
+                startedAt: "2025-10-26T09:45:42.645005Z"
+                writerId: omcfxdrxqklwdnzzj57q6t2f6gq12bzm
+        m: []
+        python_version: 3.12.12
+        t:
+            "3":
+                - 2
+                - 16
+            "4": 3.12.12
+            "5": 0.22.2
+            "8":
+                - 1
+                - 3
+            "12": 0.22.2
+            "13": windows-amd64
+batch_size:
+    value: 32
+epochs:
+    value: 10
+learning_rate:
+    value: 0.01
